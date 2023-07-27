@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/updateData" method="POST">
+        {% csrf_token %}
+        <h5>Id <input type="number" name='id' value={{data.id}} ></h5>
+        <h5>first name<input type="text" name='f_name'value={{data.f_name}} ></h5>
+        <h5>last name<input type="text" name='l_name' value={{data.l_name}} ></h5>
+        <h5>email <input type="email" name='email' value={{data.email}}></h5>
+        <input type="submit" name="" id="" value="update" />
+
+    </form>
+     </div>
+</body>
+</html>
